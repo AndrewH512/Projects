@@ -1,0 +1,153 @@
+﻿  Bullet.cpp
+  CreateBackground.cpp
+C:\Users\andre\source\repos\Hennessy-work-arch\GameProg1\Game 3\CreateBackground.cpp(28,73): warning C4244: 'argument': conversion from 'int' to 'T', possible loss of data
+          with
+          [
+              T=float
+          ]
+C:\Users\andre\source\repos\Hennessy-work-arch\GameProg1\Game 3\CreateBackground.cpp(28,58): warning C4244: 'argument': conversion from 'int' to 'T', possible loss of data
+          with
+          [
+              T=float
+          ]
+C:\Users\andre\source\repos\Hennessy-work-arch\GameProg1\Game 3\CreateBackground.cpp(29,87): warning C4244: 'argument': conversion from 'int' to 'T', possible loss of data
+          with
+          [
+              T=float
+          ]
+C:\Users\andre\source\repos\Hennessy-work-arch\GameProg1\Game 3\CreateBackground.cpp(29,72): warning C4244: 'argument': conversion from 'int' to 'T', possible loss of data
+          with
+          [
+              T=float
+          ]
+C:\Users\andre\source\repos\Hennessy-work-arch\GameProg1\Game 3\CreateBackground.cpp(30,101): warning C4244: 'argument': conversion from 'int' to 'T', possible loss of data
+          with
+          [
+              T=float
+          ]
+C:\Users\andre\source\repos\Hennessy-work-arch\GameProg1\Game 3\CreateBackground.cpp(30,72): warning C4244: 'argument': conversion from 'int' to 'T', possible loss of data
+          with
+          [
+              T=float
+          ]
+C:\Users\andre\source\repos\Hennessy-work-arch\GameProg1\Game 3\CreateBackground.cpp(31,89): warning C4244: 'argument': conversion from 'int' to 'T', possible loss of data
+          with
+          [
+              T=float
+          ]
+C:\Users\andre\source\repos\Hennessy-work-arch\GameProg1\Game 3\CreateBackground.cpp(31,59): warning C4244: 'argument': conversion from 'int' to 'T', possible loss of data
+          with
+          [
+              T=float
+          ]
+C:\Users\andre\source\repos\Hennessy-work-arch\GameProg1\Game 3\CreateBackground.cpp(52,60): warning C4244: 'argument': conversion from 'int' to 'T', possible loss of data
+          with
+          [
+              T=float
+          ]
+C:\Users\andre\source\repos\Hennessy-work-arch\GameProg1\Game 3\CreateBackground.cpp(53,68): warning C4244: 'argument': conversion from 'int' to 'T', possible loss of data
+          with
+          [
+              T=float
+          ]
+C:\Users\andre\source\repos\Hennessy-work-arch\GameProg1\Game 3\CreateBackground.cpp(54,78): warning C4244: 'argument': conversion from 'int' to 'T', possible loss of data
+          with
+          [
+              T=float
+          ]
+C:\Users\andre\source\repos\Hennessy-work-arch\GameProg1\Game 3\CreateBackground.cpp(55,70): warning C4244: 'argument': conversion from 'int' to 'T', possible loss of data
+          with
+          [
+              T=float
+          ]
+  CreateHorde.cpp
+C:\Users\andre\source\repos\Hennessy-work-arch\GameProg1\Game 3\CreateHorde.cpp(25,8): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+C:\Users\andre\source\repos\Hennessy-work-arch\GameProg1\Game 3\CreateHorde.cpp(26,24): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+C:\Users\andre\source\repos\Hennessy-work-arch\GameProg1\Game 3\CreateHorde.cpp(31,8): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+C:\Users\andre\source\repos\Hennessy-work-arch\GameProg1\Game 3\CreateHorde.cpp(32,24): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+C:\Users\andre\source\repos\Hennessy-work-arch\GameProg1\Game 3\CreateHorde.cpp(37,24): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+C:\Users\andre\source\repos\Hennessy-work-arch\GameProg1\Game 3\CreateHorde.cpp(38,8): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+C:\Users\andre\source\repos\Hennessy-work-arch\GameProg1\Game 3\CreateHorde.cpp(43,24): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+C:\Users\andre\source\repos\Hennessy-work-arch\GameProg1\Game 3\CreateHorde.cpp(44,8): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+  Obstacle.cpp
+  Obstacle.h
+  Pickup.cpp
+C:\Users\andre\source\repos\Hennessy-work-arch\GameProg1\Game 3\Pickup.cpp(83,20): warning C4244: '=': conversion from 'const int' to 'float', possible loss of data
+C:\Users\andre\source\repos\Hennessy-work-arch\GameProg1\Game 3\Pickup.cpp(84,20): warning C4244: '=': conversion from 'const int' to 'float', possible loss of data
+C:\Users\andre\source\repos\Hennessy-work-arch\GameProg1\Game 3\Pickup.cpp(113,26): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+C:\Users\andre\source\repos\Hennessy-work-arch\GameProg1\Game 3\Pickup.cpp(113,23): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+C:\Users\andre\source\repos\Hennessy-work-arch\GameProg1\Game 3\Pickup.cpp(175,34): warning C4244: '+=': conversion from 'double' to 'int', possible loss of data
+C:\Users\andre\source\repos\Hennessy-work-arch\GameProg1\Game 3\Pickup.cpp(179,32): warning C4244: '+=': conversion from 'double' to 'int', possible loss of data
+C:\Users\andre\source\repos\Hennessy-work-arch\GameProg1\Game 3\Pickup.cpp(187,33): warning C4244: '+=': conversion from 'double' to 'int', possible loss of data
+C:\Users\andre\source\repos\Hennessy-work-arch\GameProg1\Game 3\Pickup.cpp(191,42): warning C4244: '+=': conversion from 'double' to 'int', possible loss of data
+  Player.cpp
+C:\Users\andre\source\repos\Hennessy-work-arch\GameProg1\Game 3\Player.cpp(10,13): warning C4244: '=': conversion from 'const float' to 'int', possible loss of data
+C:\Users\andre\source\repos\Hennessy-work-arch\GameProg1\Game 3\Player.cpp(11,16): warning C4244: '=': conversion from 'const float' to 'int', possible loss of data
+C:\Users\andre\source\repos\Hennessy-work-arch\GameProg1\Game 3\Player.cpp(26,13): warning C4244: '=': conversion from 'const float' to 'int', possible loss of data
+C:\Users\andre\source\repos\Hennessy-work-arch\GameProg1\Game 3\Player.cpp(27,16): warning C4244: '=': conversion from 'const float' to 'int', possible loss of data
+C:\Users\andre\source\repos\Hennessy-work-arch\GameProg1\Game 3\Player.cpp(33,29): warning C4244: '=': conversion from 'int' to 'T', possible loss of data
+          with
+          [
+              T=float
+          ]
+C:\Users\andre\source\repos\Hennessy-work-arch\GameProg1\Game 3\Player.cpp(34,30): warning C4244: '=': conversion from 'int' to 'T', possible loss of data
+          with
+          [
+              T=float
+          ]
+C:\Users\andre\source\repos\Hennessy-work-arch\GameProg1\Game 3\Player.cpp(185,32): warning C4244: '=': conversion from 'int' to 'T', possible loss of data
+          with
+          [
+              T=float
+          ]
+C:\Users\andre\source\repos\Hennessy-work-arch\GameProg1\Game 3\Player.cpp(190,31): warning C4244: '=': conversion from 'int' to 'T', possible loss of data
+          with
+          [
+              T=float
+          ]
+C:\Users\andre\source\repos\Hennessy-work-arch\GameProg1\Game 3\Player.cpp(195,33): warning C4244: '=': conversion from 'int' to 'T', possible loss of data
+          with
+          [
+              T=float
+          ]
+C:\Users\andre\source\repos\Hennessy-work-arch\GameProg1\Game 3\Player.cpp(200,30): warning C4244: '=': conversion from 'int' to 'T', possible loss of data
+          with
+          [
+              T=float
+          ]
+C:\Users\andre\source\repos\Hennessy-work-arch\GameProg1\Game 3\Player.cpp(204,14): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+C:\Users\andre\source\repos\Hennessy-work-arch\GameProg1\Game 3\Player.cpp(215,26): warning C4244: '+=': conversion from 'double' to 'float', possible loss of data
+C:\Users\andre\source\repos\Hennessy-work-arch\GameProg1\Game 3\Player.cpp(221,31): warning C4244: '+=': conversion from 'double' to 'int', possible loss of data
+  TextureHolder.cpp
+  Zombie.cpp
+C:\Users\andre\source\repos\Hennessy-work-arch\GameProg1\Game 3\Zombie.cpp(57,17): warning C4244: 'initializing': conversion from 'int' to 'float', possible loss of data
+C:\Users\andre\source\repos\Hennessy-work-arch\GameProg1\Game 3\Zombie.cpp(275,14): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+  ZombieArena.cpp
+C:\Users\andre\source\repos\Hennessy-work-arch\GameProg1\Game 3\ZombieArena.cpp(28,44): warning C4244: '=': conversion from 'unsigned int' to 'T', possible loss of data
+          with
+          [
+              T=float
+          ]
+C:\Users\andre\source\repos\Hennessy-work-arch\GameProg1\Game 3\ZombieArena.cpp(29,44): warning C4244: '=': conversion from 'unsigned int' to 'T', possible loss of data
+          with
+          [
+              T=float
+          ]
+C:\Users\andre\source\repos\Hennessy-work-arch\GameProg1\Game 3\ZombieArena.cpp(31,56): warning C4244: 'argument': conversion from 'T' to 'unsigned int', possible loss of data
+          with
+          [
+              T=float
+          ]
+C:\Users\andre\source\repos\Hennessy-work-arch\GameProg1\Game 3\ZombieArena.cpp(31,42): warning C4244: 'argument': conversion from 'T' to 'unsigned int', possible loss of data
+          with
+          [
+              T=float
+          ]
+C:\Users\andre\source\repos\Hennessy-work-arch\GameProg1\Game 3\ZombieArena.cpp(872,50): warning C4244: 'argument': conversion from 'int' to 'T', possible loss of data
+          with
+          [
+              T=float
+          ]
+  Generating Code...
+x64\Debug\Obstacle.obj : warning LNK4042: object specified more than once; extras ignored
+  Game 3.vcxproj -> C:\Users\andre\source\repos\Hennessy-work-arch\GameProg1\x64\Debug\Game 3.exe

@@ -1,0 +1,38 @@
+﻿  Timber.cpp
+C:\Users\andre\source\repos\Hennessy-work-arch\GameProg1\Game1\Timber.cpp(35,64): warning C4244: 'argument': conversion from 'T' to 'T', possible loss of data
+          with
+          [
+              T=int
+          ]
+          and
+          [
+              T=float
+          ]
+C:\Users\andre\source\repos\Hennessy-work-arch\GameProg1\Game1\Timber.cpp(35,44): warning C4244: 'argument': conversion from 'T' to 'T', possible loss of data
+          with
+          [
+              T=int
+          ]
+          and
+          [
+              T=float
+          ]
+C:\Users\andre\source\repos\Hennessy-work-arch\GameProg1\Game1\Timber.cpp(74,21): warning C4244: 'initializing': conversion from 'int' to 'float', possible loss of data
+C:\Users\andre\source\repos\Hennessy-work-arch\GameProg1\Game1\Timber.cpp(351,34): warning C4244: '+=': conversion from 'double' to 'float', possible loss of data
+C:\Users\andre\source\repos\Hennessy-work-arch\GameProg1\Game1\Timber.cpp(383,34): warning C4244: '+=': conversion from 'double' to 'float', possible loss of data
+C:\Users\andre\source\repos\Hennessy-work-arch\GameProg1\Game1\Timber.cpp(414,34): warning C4244: '+=': conversion from 'double' to 'float', possible loss of data
+C:\Users\andre\source\repos\Hennessy-work-arch\GameProg1\Game1\Timber.cpp(515,31): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+C:\Users\andre\source\repos\Hennessy-work-arch\GameProg1\Game1\Timber.cpp(523,24): warning C4244: 'initializing': conversion from 'int' to 'float', possible loss of data
+C:\Users\andre\source\repos\Hennessy-work-arch\GameProg1\Game1\Timber.cpp(552,21): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+C:\Users\andre\source\repos\Hennessy-work-arch\GameProg1\Game1\Timber.cpp(565,34): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+C:\Users\andre\source\repos\Hennessy-work-arch\GameProg1\Game1\Timber.cpp(572,36): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+C:\Users\andre\source\repos\Hennessy-work-arch\GameProg1\Game1\Timber.cpp(578,33): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+C:\Users\andre\source\repos\Hennessy-work-arch\GameProg1\Game1\Timber.cpp(602,34): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+C:\Users\andre\source\repos\Hennessy-work-arch\GameProg1\Game1\Timber.cpp(609,36): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+C:\Users\andre\source\repos\Hennessy-work-arch\GameProg1\Game1\Timber.cpp(616,33): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+C:\Users\andre\source\repos\Hennessy-work-arch\GameProg1\Game1\Timber.cpp(642,26): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+C:\Users\andre\source\repos\Hennessy-work-arch\GameProg1\Game1\Timber.cpp(649,36): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+C:\Users\andre\source\repos\Hennessy-work-arch\GameProg1\Game1\Timber.cpp(655,33): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+C:\Users\andre\source\repos\Hennessy-work-arch\GameProg1\Game1\Timber.cpp(684,18): warning C4244: 'initializing': conversion from 'int' to 'float', possible loss of data
+C:\Users\andre\source\repos\Hennessy-work-arch\GameProg1\Game1\Timber.cpp(878,9): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
+  Game1.vcxproj -> C:\Users\andre\source\repos\Hennessy-work-arch\GameProg1\x64\Debug\Game1.exe
