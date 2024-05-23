@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title> Andrew's E04</title>
+  
+  <link rel="stylesheet" href="fridge.css">
+</head>
+
+<body>
+<div id="fridge-display">
+  <button id="onOffButton" onclick="toggleDisplay()">Turn On</button>
+  <button id="tvButton" onclick="toggleTV()" style="display: none;">TV On/Off</button>
+  <button id="browserButton" onclick="toggleBrowser()" style="display: none;">Browser On/Off</button>
+  <button id="fridgeButton" onclick="toggleFridge()" style="display: none;">Fridge Open/Close</button>
+  
+  <div id="clock"></div>
+  <div id="temperature" class="display-element">Temperature: <span id="temperatureValue">25°C</span></div>
+  <div id="tv" class="display-element" style="display: none;">
+  <img src="https://cdn.windowsreport.com/wp-content/uploads/2016/08/New-Netflix-App-Update-brings-support-for-4K-and-HDR-740x445.jpg" alt="TV Image">
+  </div>
+  <div id="browser" class="display-element" style="display: none;">
+  <img src="https://th.bing.com/th/id/R.0e85d0f7404781219e002545216d9c80?rik=rjuGNjkNzgQ5cg&riu=http%3a%2f%2fnews.softpedia.com%2fimages%2fnews2%2fGoogle-Homepage-Redesign-Rolls-Out-to-a-Lot-More-Users-Pics-2.jpg&ehk=8DwI7jcZlHROuZ7eYPJIzyDC5RZGd7pve4%2b2WYyRZr4%3d&risl=&pid=ImgRaw&r=0">
+  </div>
+</div>
+<div id="fridge" class="display-element" style="display: none;">
+  <img src="https://th.bing.com/th/id/R.d9c67f72bb0747bda087de42ea8e1659?rik=OSymlszmhkvbxw&pid=ImgRaw&r=0" alt="fridge Img">
+</div>
+
+	<script src="fridge.js"></script>
+</body>
+</html>

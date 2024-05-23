@@ -1,0 +1,67 @@
+body {
+      font-family: 'Arial', sans-serif;
+      background-color: #f0f0f0;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    #fridge-display {
+      width: 600px; 
+      height: 500px; 
+      border: 10px solid #4CAF50;
+      border-radius: 10px;
+      padding: 20px;
+      background-color: #fff;
+      position: relative;
+    }
+
+    #onOffButton,
+	#tvButton,
+	#browserButton,
+	#fridgeButton{
+      display: inline-block;
+      padding: 10px 20px;
+      font-size: 16px;
+      font-weight: bold;
+      text-align: center;
+      border-radius: 5px;
+      background: linear-gradient(45deg, #4CAF50, #2196F3);
+      color: #fff;
+    }
+
+    #clock {
+      font-size: 24px;
+      margin-bottom: 20px;
+    }
+
+    .display-element {
+      margin-bottom: 10px;
+      display: none;
+    }
+
+    #temperature{
+	  color: red
+	}
+    #insideFridge{
+	  color: #000
+	}
+	
+	#tv img,
+    #browser img {
+      max-width: 100%; 
+      max-height: 150px;
+	  display: block; 
+	  margin: 0 auto; 
+    }
+	
+	#temperature{
+	  text-align: center;
+	}
+	#fridge img{
+	  max-width: 1000%; 
+      max-height: 1000px;
+	}

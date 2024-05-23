@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title> Marist Parking App </title>
+  <link rel="stylesheet" href="parking_app.css">
+</head>
+<body>
+	<!-- Header -->
+	<div class="header">
+		<h1 style="text-align: center;">Marist Parking App</h1>
+	</div>
+	<!-- Divisions for Buttons -->
+	<div id="buttons" style="text-align: center;">
+		<input type=button onclick="redirectTo('parking.html')" id="button1" value="Home Page" class="button">
+		<input type=button onclick="redirectTo('lots.html')" id="button2" value="Parking Lots" class="button">
+		<input type=button onclick="redirectTo('404.html')" id="button2" value="Need Help?" class="button">
+		<input type=button onclick="redirectTo('404.html')" id="button3" value="Contact Us!" class="button">
+		<input type=button onclick="redirectTo('404.html')" id="button4" value="Sercuity" class="button">
+		<input type=button onclick="redirectTo('404.html')" id="button5" value="Sign In!" class="button">
+	</div>
+	<nav class="crumbs">
+    <ol>
+		<li class="crumb">Home</li>
+    </ol>
+	</nav>
+	
+	 <!-- Parking Lot Information -->
+  <div class="parking-block">
+    <h2>Welcome!</h2>
+    <p>Welcome to the Marist Parking App!
+	<br> Here you can find all the information you need on the parking lots here at Marist!
+	<br> This app will remove the stress of trying to find parking. With three easy clicks
+	<br> you'll find a spot fast and will never be late to class. Click on "Parking Lots" to start!>
+	</p>
+    <!-- Add more information as needed -->
+  </div>
+<hr></hr>
+  <!-- Marist Parking Information -->
+  <div class="paragraph">
+    <h2>What We Offer</h2>
+    <p>Discover all you need to know about parking facilities and regulations right here.</p>
+    <p>Receive real-time notifications about the availability of parking lots, ensuring you always find a convenient spot.</p>
+    <p>Get up-to-date information on the number of open spots in each parking lot, helping you plan your commute with ease.</p>
+    <p>Experience hassle-free assistance with ticket inquiries and parking-related issues through seamless contact with our dedicated security team.</p>
+    <p>Explore our user-friendly interface designed to streamline your parking experience, making your journey to and from campus stress-free.</p>
+  </div>
+<hr></hr>
+  <div id="marist_logo" style="text-align: center;">
+		<h2>Map of All Parking Lots<h2>
+		<img src = "https://1000logos.net/wp-content/uploads/2021/06/Marist-Red-Foxes-logo.png" class="top-left">
+  </div>
+	
+  <div id="map" style="text-align: center;">
+	    <img src = "https://my.marist.edu/documents/810944/815975/ParkingMap+Fall+2019.jpg/49934a5c-b04b-42c0-8d8e-bcc9ed98a98b?t=1566513925746" class = "map">
+  </div>
+	
+
+<script src="parking.js"></script>
+<footer>
+   <hr><small>&copy; Andrew J Hennessy, 04/30/2024</small></hr>
+</footer>
+
+
+</body>
+</html>

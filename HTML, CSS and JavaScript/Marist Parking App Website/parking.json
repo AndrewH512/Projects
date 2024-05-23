@@ -1,0 +1,158 @@
+{
+  "parking_lots": [
+    {
+      "name": "McCann",
+      "map_filename": "mcCann.png",
+      "total_spaces": 50,
+      "comments": "Main parking lot for students",
+      "other_attributes": {
+        "full_lot_full": false,
+        "in_use_spaces": 20,
+        "students_parked": 10,
+        "staff_parked": 10,
+        "visitors_parked": 0,
+        "security_cameras": true
+      },
+      "spaces": [
+        {
+          "space_id": 1,
+          "type": "student",
+          "status": "available"
+        },
+        {
+          "space_id": 2,
+          "type": "student",
+          "status": "available"
+        },
+        {
+          "space_id": 3,
+          "type": "staff",
+          "status": "reserved",
+          "reserved_date_time": "2024-04-23T10:00:00",
+          "reserved_until": "2024-04-23T14:00:00"
+        },
+        {
+          "space_id": 4,
+          "type": "handicap",
+          "status": "filled",
+          "filled_date_time": "2024-04-23T09:30:00"
+        },
+        {
+          "space_id": 5,
+          "type": "student",
+          "status": "available"
+        },
+        {
+          "space_id": 6,
+          "type": "staff",
+          "status": "available"
+        },
+        {
+          "space_id": 7,
+          "type": "student",
+          "status": "available"
+        },
+        {
+          "space_id": 8,
+          "type": "student",
+          "status": "available"
+        },
+        {
+          "space_id": 9,
+          "type": "student",
+          "status": "available"
+        },
+        {
+          "space_id": 10,
+          "type": "staff",
+          "status": "available"
+        },
+        {
+          "space_id": 11,
+          "type": "student",
+          "status": "available"
+        },
+        {
+          "space_id": 12,
+          "type": "staff",
+          "status": "available"
+        }
+      ]
+    },
+    {
+      "name": "Foy",
+      "map_filename": "foy.jpg",
+      "total_spaces": 30,
+      "comments": "Staff Only Parking",
+      "other_attributes": {
+        "full_lot_full": true,
+        "in_use_spaces": 30,
+        "students_parked": 30,
+        "staff_parked": 0,
+        "visitors_parked": 0,
+        "security_cameras": true
+      },
+      "spaces": []
+    },
+    {
+      "name": "Donnelly",
+      "map_filename": "donnelly.jpg",
+      "total_spaces": 40,
+      "comments": "Parking lot for visitors and special events.",
+      "other_attributes": {
+        "full_lot_full": false,
+        "in_use_spaces": 40,
+        "students_parked": 20,
+        "staff_parked": 5,
+        "visitors_parked": 15,
+        "security_cameras": true
+      },
+      "spaces": []
+    },
+    {
+      "name": "Beck West",
+      "map_filename": "beck_west.jpg",
+      "total_spaces": 100,
+      "comments": "Parking lot exclusively for faculty members.",
+      "other_attributes": {
+        "full_lot_full": false,
+        "in_use_spaces": 65,
+        "students_parked": 55,
+        "staff_parked": 5,
+        "visitors_parked": 5,
+        "security_cameras": true
+      },
+      "spaces": []
+    },
+    {
+      "name": "Riverview",
+      "map_filename": "riverview.jpg",
+      "total_spaces": 45,
+      "comments": "Covered parking garage for staff and visitors.",
+      "other_attributes": {
+        "full_lot_full": false,
+        "in_use_spaces": 40,
+        "students_parked": 20,
+        "staff_parked": 10,
+        "visitors_parked": 5,
+        "security_cameras": true
+      },
+      "spaces": []
+    },
+    {
+      "name": "Midrise",
+      "map_filename": "midrise.jpg",
+      "total_spaces": 40,
+      "comments": "Parking lot reserved for special guests.",
+      "other_attributes": {
+        "full_lot_full": true,
+        "in_use_spaces": 40,
+        "students_parked": 20,
+        "staff_parked": 20,
+        "visitors_parked": 0,
+        "security_cameras": true
+      },
+      "spaces": []
+    }
+  ]
+}
