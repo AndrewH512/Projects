@@ -1,0 +1,90 @@
+[gd_scene load_steps=12 format=3 uid="uid://c8a8m5dacy5l7"]
+
+[ext_resource type="Script" path="res://strong_mob.gd" id="1_f7rly"]
+[ext_resource type="Texture2D" uid="uid://c1sq7cogpjlfr" path="res://art/PNG/Enemies/enemySwimming_1.png" id="1_g6nqr"]
+[ext_resource type="Texture2D" uid="uid://cm8r6341u1j5x" path="res://art/PNG/Enemies/enemySwimming_3.png" id="2_amimo"]
+[ext_resource type="Texture2D" uid="uid://bv2ejuey2b382" path="res://art/PNG/Enemies/enemySwimming_2.png" id="3_v706g"]
+[ext_resource type="Texture2D" uid="uid://cvt66ov0dnmte" path="res://art/PNG/Enemies/enemyWalking_1.png" id="4_bokvq"]
+[ext_resource type="Texture2D" uid="uid://e7itvmcl4wmu" path="res://art/PNG/Enemies/enemyWalking_2.png" id="5_pbgvh"]
+[ext_resource type="Texture2D" uid="uid://de7t16rhisvtd" path="res://art/PNG/Enemies/enemyWalking_3.png" id="6_44yh5"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_6pswp"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_g6nqr")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_amimo")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_v706g")
+}],
+"loop": true,
+"name": &"Swimming",
+"speed": 3.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("4_bokvq")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_pbgvh")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_44yh5")
+}],
+"loop": true,
+"name": &"walk",
+"speed": 3.0
+}]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_tdahl"]
+radius = 50.0
+height = 138.0
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_w4fcm"]
+radius = 200.0
+height = 400.0
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_v8gor"]
+radius = 54.0
+height = 186.0
+
+[node name="Strong_Mob" type="CharacterBody2D" groups=["Mobs"]]
+collision_layer = 4
+collision_mask = 7
+script = ExtResource("1_f7rly")
+
+[node name="floor_checker" type="RayCast2D" parent="."]
+position = Vector2(50, 42)
+target_position = Vector2(-1, 29)
+collision_mask = 2
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+self_modulate = Color(0, 1, 0, 1)
+scale = Vector2(3, 3)
+sprite_frames = SubResource("SpriteFrames_6pswp")
+animation = &"walk"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CapsuleShape2D_tdahl")
+debug_color = Color(0, 0.6, 0.701961, 0.419608)
+
+[node name="detection_area" type="Area2D" parent="."]
+position = Vector2(0, 1)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="detection_area"]
+position = Vector2(147, 2)
+shape = SubResource("CapsuleShape2D_w4fcm")
+
+[node name="Hitbox" type="Area2D" parent="." groups=["StrongMob"]]
+collision_layer = 4
+collision_mask = 7
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Hitbox"]
+position = Vector2(0, -12)
+shape = SubResource("CapsuleShape2D_v8gor")
+
+[connection signal="body_entered" from="detection_area" to="." method="_on_detection_area_body_entered"]
+[connection signal="body_exited" from="detection_area" to="." method="_on_detection_area_body_exited"]

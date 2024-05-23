@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://74o30ekghlfn"
+path="res://.godot/imported/minotaur - hurt.mp3-2b6d2aceae90694ed006b5c6ad23226f.mp3str"
+
+[deps]
+
+source_file="res://sounds/minotaur/minotaur - hurt.mp3"
+dest_files=["res://.godot/imported/minotaur - hurt.mp3-2b6d2aceae90694ed006b5c6ad23226f.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

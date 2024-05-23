@@ -1,0 +1,170 @@
+[gd_scene load_steps=12 format=3 uid="uid://c1wyavlglib3h"]
+
+[ext_resource type="Script" path="res://levelmanger.gd" id="1_kshyc"]
+[ext_resource type="Texture2D" uid="uid://85vci7blaxru" path="res://art/PNG/Backgrounds/set1_background.png" id="2_rj0e8"]
+[ext_resource type="FontFile" uid="uid://c4namepxkhxyn" path="res://fonts/BruceForeverRegular-X3jd2.ttf" id="3_2jt6k"]
+[ext_resource type="Texture2D" uid="uid://cbiad3nipe42x" path="res://art/PNG/Backgrounds/set2_tiles.png" id="3_q6gen"]
+[ext_resource type="PackedScene" uid="uid://yb4bpve4kjij" path="res://level_tile_maps/tile_map_level3.tscn" id="4_5w44v"]
+[ext_resource type="PackedScene" uid="uid://daopd3cwuqq5c" path="res://player.tscn" id="5_qmfg3"]
+[ext_resource type="PackedScene" uid="uid://gcitsul07u1a" path="res://mob.tscn" id="7_be2ub"]
+[ext_resource type="PackedScene" uid="uid://c8a8m5dacy5l7" path="res://strong_mob.tscn" id="8_0sa0y"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_sfjou"]
+size = Vector2(4158, 323)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_nyomd"]
+size = Vector2(7753, 223)
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_se7iv"]
+radius = 44.2832
+
+[node name="Level 3" type="Node2D"]
+position = Vector2(372, 536)
+script = ExtResource("1_kshyc")
+
+[node name="TileMap - Level 3" parent="." instance=ExtResource("4_5w44v")]
+position = Vector2(395, -590)
+
+[node name="UserInterface" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -312.0
+offset_top = -539.0
+offset_right = -312.0
+offset_bottom = -539.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Retry" type="ColorRect" parent="UserInterface"]
+layout_mode = 0
+offset_left = -61.0
+offset_top = 5.0
+offset_right = 1097.0
+offset_bottom = 652.0
+color = Color(0, 0, 0, 0.611765)
+
+[node name="Label" type="Label" parent="UserInterface/Retry"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -131.0
+offset_top = -21.0
+offset_right = 134.0
+offset_bottom = 33.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(1, 0, 0, 1)
+theme_override_fonts/font = ExtResource("3_2jt6k")
+theme_override_font_sizes/font_size = 64
+text = "You Died
+Press Enter To Retry!"
+horizontal_alignment = 1
+
+[node name="ParallaxBackground" type="ParallaxBackground" parent="."]
+scroll_base_scale = Vector2(2, 2)
+
+[node name="Sky" type="ParallaxLayer" parent="ParallaxBackground"]
+position = Vector2(-141, -36)
+motion_mirroring = Vector2(1280, 960)
+
+[node name="Sprite2D" type="Sprite2D" parent="ParallaxBackground/Sky"]
+modulate = Color(1, 0.12549, 0, 0.984314)
+position = Vector2(64, 0)
+scale = Vector2(2, 2)
+texture = ExtResource("2_rj0e8")
+centered = false
+
+[node name="Blocks" type="ParallaxLayer" parent="ParallaxBackground"]
+position = Vector2(75, -29)
+motion_mirroring = Vector2(1280, 960)
+
+[node name="Sprite2D" type="Sprite2D" parent="ParallaxBackground/Blocks"]
+modulate = Color(0, 0, 0.121569, 1)
+position = Vector2(513, 303)
+scale = Vector2(2, 2)
+texture = ExtResource("3_q6gen")
+
+[node name="Player" parent="." instance=ExtResource("5_qmfg3")]
+position = Vector2(2197, -255)
+
+[node name="Mob" parent="." instance=ExtResource("7_be2ub")]
+position = Vector2(-900, 204)
+
+[node name="Mob2" parent="." instance=ExtResource("7_be2ub")]
+position = Vector2(-1573, 195)
+
+[node name="Mob3" parent="." instance=ExtResource("7_be2ub")]
+position = Vector2(-2574, 315)
+
+[node name="Mob4" parent="." instance=ExtResource("7_be2ub")]
+position = Vector2(-3641, 107)
+
+[node name="Mob5" parent="." instance=ExtResource("7_be2ub")]
+position = Vector2(-4854, 934)
+
+[node name="Mob6" parent="." instance=ExtResource("7_be2ub")]
+position = Vector2(-4668, -328)
+
+[node name="Mob7" parent="." instance=ExtResource("7_be2ub")]
+position = Vector2(-5060, 1768)
+
+[node name="Mob8" parent="." instance=ExtResource("7_be2ub")]
+position = Vector2(-6632, 1896)
+
+[node name="Mob9" parent="." instance=ExtResource("7_be2ub")]
+position = Vector2(-5495, 838)
+
+[node name="Mob10" parent="." instance=ExtResource("7_be2ub")]
+position = Vector2(-6427, 584)
+
+[node name="Mob11" parent="." instance=ExtResource("7_be2ub")]
+position = Vector2(-6443, 830)
+
+[node name="Mob12" parent="." instance=ExtResource("7_be2ub")]
+position = Vector2(-6804, 822)
+
+[node name="Strong_Mob" parent="." instance=ExtResource("8_0sa0y")]
+position = Vector2(2851, -283)
+
+[node name="Strong_Mob2" parent="." instance=ExtResource("8_0sa0y")]
+position = Vector2(-6231, -732)
+
+[node name="Strong_Mob3" parent="." instance=ExtResource("8_0sa0y")]
+position = Vector2(-5913, 1760)
+
+[node name="Strong_Mob4" parent="." instance=ExtResource("8_0sa0y")]
+position = Vector2(-6794, 2349)
+
+[node name="Strong_Mob5" parent="." instance=ExtResource("8_0sa0y")]
+position = Vector2(-6598, -93)
+
+[node name="Strong_Mob6" parent="." instance=ExtResource("8_0sa0y")]
+position = Vector2(1236, -278)
+
+[node name="Interact" type="Area2D" parent="."]
+
+[node name="Lower_Collison" type="CollisionShape2D" parent="Interact"]
+position = Vector2(-6085, 2767)
+shape = SubResource("RectangleShape2D_sfjou")
+
+[node name="Upper_Collison" type="CollisionShape2D" parent="Interact"]
+position = Vector2(-66.5, 922.5)
+shape = SubResource("RectangleShape2D_nyomd")
+
+[node name="Finish" type="Area2D" parent="."]
+
+[node name="Finish_Collision" type="CollisionShape2D" parent="Finish"]
+position = Vector2(-7658, 1938)
+shape = SubResource("CircleShape2D_se7iv")
+
+[node name="Mob13" parent="." instance=ExtResource("7_be2ub")]
+position = Vector2(1816, -261)
+
+[connection signal="hit" from="Player" to="." method="_on_player_hit"]
+[connection signal="body_entered" from="Interact" to="." method="_on_interact_body_entered"]
+[connection signal="body_entered" from="Finish" to="." method="_on_finish_body_entered"]

@@ -1,0 +1,62 @@
+[gd_resource type="Resource" script_class="Inv" load_steps=17 format=3 uid="uid://df16ec25bdwmf"]
+
+[ext_resource type="Script" path="res://inventory/inventory_item.gd" id="1_i03m2"]
+[ext_resource type="Script" path="res://Inv_slot.gd" id="2_bafpx"]
+[ext_resource type="Script" path="res://inventory/inventory.gd" id="3_tl7x5"]
+
+[sub_resource type="Resource" id="Resource_4d2r6"]
+script = ExtResource("1_i03m2")
+name = ""
+
+[sub_resource type="Resource" id="Resource_t8sbf"]
+script = ExtResource("2_bafpx")
+item = SubResource("Resource_4d2r6")
+amount = 15
+
+[sub_resource type="Resource" id="Resource_wi7x7"]
+script = ExtResource("2_bafpx")
+amount = 0
+
+[sub_resource type="Resource" id="Resource_ug6uj"]
+script = ExtResource("2_bafpx")
+amount = 0
+
+[sub_resource type="Resource" id="Resource_bg4hv"]
+script = ExtResource("2_bafpx")
+amount = 0
+
+[sub_resource type="Resource" id="Resource_p5k1d"]
+script = ExtResource("2_bafpx")
+amount = 0
+
+[sub_resource type="Resource" id="Resource_ny6nk"]
+script = ExtResource("2_bafpx")
+amount = 0
+
+[sub_resource type="Resource" id="Resource_yxeam"]
+script = ExtResource("2_bafpx")
+amount = 0
+
+[sub_resource type="Resource" id="Resource_ct11n"]
+script = ExtResource("2_bafpx")
+amount = 0
+
+[sub_resource type="Resource" id="Resource_47487"]
+script = ExtResource("2_bafpx")
+amount = 0
+
+[sub_resource type="Resource" id="Resource_yc2mk"]
+script = ExtResource("2_bafpx")
+amount = 0
+
+[sub_resource type="Resource" id="Resource_jjah8"]
+script = ExtResource("2_bafpx")
+amount = 0
+
+[sub_resource type="Resource" id="Resource_kkc80"]
+script = ExtResource("2_bafpx")
+amount = 0
+
+[resource]
+script = ExtResource("3_tl7x5")
+slots = Array[ExtResource("2_bafpx")]([SubResource("Resource_t8sbf"), SubResource("Resource_wi7x7"), SubResource("Resource_ug6uj"), SubResource("Resource_bg4hv"), SubResource("Resource_p5k1d"), SubResource("Resource_ny6nk"), SubResource("Resource_yxeam"), SubResource("Resource_ct11n"), SubResource("Resource_47487"), SubResource("Resource_yc2mk"), SubResource("Resource_jjah8"), SubResource("Resource_kkc80")])

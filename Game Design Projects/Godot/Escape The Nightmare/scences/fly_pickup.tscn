@@ -1,0 +1,27 @@
+[gd_scene load_steps=5 format=3 uid="uid://bkwly65f8x81s"]
+
+[ext_resource type="Texture2D" uid="uid://bjmtsjej6tldt" path="res://art/Pickups/wings_PNG26.png" id="1_wmbr2"]
+[ext_resource type="Script" path="res://scripts/Pickups.gd" id="2_j54u4"]
+[ext_resource type="AudioStream" uid="uid://b8rj55lrif0rq" path="res://sounds/player/fly_pickup.mp3" id="3_ivvgc"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_nslqo"]
+radius = 120.0
+height = 960.0
+
+[node name="Fly_Pickup" type="Sprite2D"]
+position = Vector2(148, 54)
+scale = Vector2(0.08, 0.08)
+texture = ExtResource("1_wmbr2")
+script = ExtResource("2_j54u4")
+
+[node name="fly_interaction" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="fly_interaction"]
+position = Vector2(0, 1.5378e-05)
+rotation = 1.5708
+shape = SubResource("CapsuleShape2D_nslqo")
+
+[node name="fly_sound" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("3_ivvgc")
+
+[connection signal="body_entered" from="fly_interaction" to="." method="_on_fly_interaction_body_entered"]

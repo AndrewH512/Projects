@@ -1,0 +1,101 @@
+[gd_scene load_steps=7 format=3 uid="uid://byfnih2yetflk"]
+
+[ext_resource type="Script" path="res://gameover.gd" id="1_1cg4g"]
+[ext_resource type="PackedScene" uid="uid://bwyhwsnpap6jm" path="res://level_tile_maps/gameover.tscn" id="2_3jgrm"]
+[ext_resource type="FontFile" uid="uid://c4namepxkhxyn" path="res://fonts/BruceForeverRegular-X3jd2.ttf" id="3_sgngy"]
+[ext_resource type="Texture2D" uid="uid://85vci7blaxru" path="res://art/PNG/Backgrounds/set1_background.png" id="4_2ygui"]
+[ext_resource type="Texture2D" uid="uid://cbiad3nipe42x" path="res://art/PNG/Backgrounds/set2_tiles.png" id="5_d3ceh"]
+[ext_resource type="PackedScene" uid="uid://c8a8m5dacy5l7" path="res://strong_mob.tscn" id="6_q6cbb"]
+
+[node name="gameover" type="CanvasLayer"]
+script = ExtResource("1_1cg4g")
+
+[node name="Strong_Mob" parent="." instance=ExtResource("6_q6cbb")]
+position = Vector2(186, 251)
+
+[node name="Strong_Mob2" parent="." instance=ExtResource("6_q6cbb")]
+position = Vector2(1015, 251)
+
+[node name="TileMap - Level 3" parent="." instance=ExtResource("2_3jgrm")]
+
+[node name="start" type="Button" parent="."]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -246.0
+offset_top = -222.0
+offset_right = 258.0
+offset_bottom = 3.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(0, 0, 1, 1)
+theme_override_fonts/font = ExtResource("3_sgngy")
+theme_override_font_sizes/font_size = 64
+text = "Play Again"
+
+[node name="quit" type="Button" parent="."]
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -114.0
+offset_top = -146.0
+offset_right = 114.0
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_colors/font_color = Color(1, 0, 0, 1)
+theme_override_fonts/font = ExtResource("3_sgngy")
+theme_override_font_sizes/font_size = 64
+text = "Quit"
+
+[node name="main" type="Button" parent="."]
+offset_left = 331.0
+offset_top = 363.0
+offset_right = 840.0
+offset_bottom = 446.0
+theme_override_fonts/font = ExtResource("3_sgngy")
+theme_override_font_sizes/font_size = 64
+text = "Main Menu"
+
+[node name="Label" type="Label" parent="."]
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -318.5
+offset_right = 318.5
+offset_bottom = 75.0
+grow_horizontal = 2
+theme_override_colors/font_color = Color(0.682353, 0.937255, 0.0627451, 1)
+theme_override_fonts/font = ExtResource("3_sgngy")
+theme_override_font_sizes/font_size = 64
+text = "You Won!!!!!!!!!!"
+
+[node name="ParallaxBackground" type="ParallaxBackground" parent="."]
+scroll_base_scale = Vector2(2, 2)
+
+[node name="Sky" type="ParallaxLayer" parent="ParallaxBackground"]
+position = Vector2(-216, -7)
+motion_mirroring = Vector2(1280, 960)
+
+[node name="Sprite2D" type="Sprite2D" parent="ParallaxBackground/Sky"]
+modulate = Color(1, 0.12549, 0, 0.984314)
+position = Vector2(75, 4)
+scale = Vector2(2, 2)
+texture = ExtResource("4_2ygui")
+centered = false
+
+[node name="Blocks" type="ParallaxLayer" parent="ParallaxBackground"]
+motion_mirroring = Vector2(1280, 960)
+
+[node name="Sprite2D" type="Sprite2D" parent="ParallaxBackground/Blocks"]
+modulate = Color(0, 0, 0.121569, 1)
+position = Vector2(513, 303)
+scale = Vector2(2, 2)
+texture = ExtResource("5_d3ceh")
+
+[connection signal="pressed" from="start" to="." method="_on_start_pressed"]
+[connection signal="pressed" from="quit" to="." method="_on_quit_pressed"]
+[connection signal="pressed" from="main" to="." method="_on_main_pressed"]

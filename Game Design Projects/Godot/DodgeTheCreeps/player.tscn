@@ -1,0 +1,51 @@
+[gd_scene load_steps=6 format=3 uid="uid://dawnmuuvov14f"]
+
+[ext_resource type="Script" path="res://player.gd" id="1_uxcu5"]
+[ext_resource type="Texture2D" uid="uid://cgaseb0y1yvtc" path="res://art/playership1.1.png" id="4_p2mak"]
+[ext_resource type="Texture2D" uid="uid://dwq2rbpmnbo4p" path="res://art/playership1.2.png" id="5_brlio"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_0m8gm"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("4_p2mak")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_brlio")
+}],
+"loop": true,
+"name": &"up",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("4_p2mak")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_brlio")
+}],
+"loop": true,
+"name": &"walk",
+"speed": 5.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_3kyak"]
+size = Vector2(47.9, 28)
+
+[node name="Player" type="Area2D"]
+position = Vector2(-46, -45)
+script = ExtResource("1_uxcu5")
+speed = 300
+metadata/_edit_group_ = true
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+scale = Vector2(1.25, 1.25)
+sprite_frames = SubResource("SpriteFrames_0m8gm")
+animation = &"walk"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(3.0625, 0)
+scale = Vector2(1.25, 1.25)
+shape = SubResource("RectangleShape2D_3kyak")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]

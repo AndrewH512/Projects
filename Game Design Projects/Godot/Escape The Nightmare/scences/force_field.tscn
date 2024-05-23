@@ -1,0 +1,22 @@
+[gd_scene load_steps=4 format=3 uid="uid://cw14ktw26tonf"]
+
+[ext_resource type="Texture2D" uid="uid://2nnrula0vbnt" path="res://art/Pickups/force_field_pickup.png" id="1_6on3s"]
+[ext_resource type="Script" path="res://scripts/Pickups.gd" id="2_3brcm"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_653i4"]
+size = Vector2(25, 24)
+
+[node name="Force_Field" type="Sprite2D"]
+position = Vector2(57, 45)
+texture = ExtResource("1_6on3s")
+script = ExtResource("2_3brcm")
+
+[node name="interaction_force_field" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="interaction_force_field"]
+position = Vector2(0.5, 0)
+shape = SubResource("RectangleShape2D_653i4")
+
+[node name="force_field_sound" type="AudioStreamPlayer2D" parent="."]
+
+[connection signal="body_entered" from="interaction_force_field" to="." method="_on_interaction_force_field_body_entered"]

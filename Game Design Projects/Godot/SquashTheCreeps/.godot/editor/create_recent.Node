@@ -1,0 +1,14 @@
+Label
+Timer
+Control
+Button
+Label3D
+CanvasLayer
+ColorRect
+AnimationPlayer
+AnimationTree
+AudioStreamPlayer3D
+CollisionShape3D
+Area3D
+PathFollow3D
+Path3D

@@ -1,0 +1,71 @@
+[gd_scene load_steps=10 format=3 uid="uid://8ums2ua4qn33"]
+
+[ext_resource type="Script" path="res://mob.gd" id="1_6dnpl"]
+[ext_resource type="Texture2D" uid="uid://cubxmsal7wsfp" path="res://art/enemyship3.1.png" id="2_1pa13"]
+[ext_resource type="Texture2D" uid="uid://bg4hsksf07073" path="res://art/enemyship2.1.png" id="2_otiug"]
+[ext_resource type="Texture2D" uid="uid://dicbu075rjfqf" path="res://art/enemyship3.2.png" id="3_g2ixb"]
+[ext_resource type="Texture2D" uid="uid://c2f207tgiimm1" path="res://art/enemyship2.2.png" id="3_m4gco"]
+[ext_resource type="Texture2D" uid="uid://chhmx572j11yo" path="res://art/enemyship1.1.png" id="6_qxiyl"]
+[ext_resource type="Texture2D" uid="uid://b6s4dsnogbsp4" path="res://art/enemyship1.2.png" id="7_oo1ts"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_o8csp"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_1pa13")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_g2ixb")
+}],
+"loop": true,
+"name": &"Green Ship",
+"speed": 3.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_otiug")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_m4gco")
+}],
+"loop": true,
+"name": &"Orange Ship",
+"speed": 3.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("6_qxiyl")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_oo1ts")
+}],
+"loop": true,
+"name": &"Red Ship",
+"speed": 3.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_wamhv"]
+size = Vector2(26.2857, 58.8571)
+
+[node name="Mob" type="RigidBody2D" groups=["mobs"]]
+position = Vector2(3, 0)
+collision_mask = 0
+gravity_scale = 0.0
+script = ExtResource("1_6dnpl")
+metadata/_edit_group_ = true
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(0.0167506, 0)
+scale = Vector2(1.75052, 1.75)
+sprite_frames = SubResource("SpriteFrames_o8csp")
+animation = &"Green Ship"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(4.5, 2.38419e-07)
+rotation = 1.5708
+scale = Vector2(1.75, 1.75)
+shape = SubResource("RectangleShape2D_wamhv")
+
+[node name="VisibleOnScreenNotifier2D" type="VisibleOnScreenNotifier2D" parent="."]
+position = Vector2(3, -2)
+scale = Vector2(7.5, 4.2)

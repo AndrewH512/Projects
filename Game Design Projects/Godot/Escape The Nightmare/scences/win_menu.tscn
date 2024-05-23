@@ -1,0 +1,112 @@
+[gd_scene load_steps=4 format=3 uid="uid://civkpqy3dkrfn"]
+
+[ext_resource type="Script" path="res://scripts/menus.gd" id="1_k75tp"]
+[ext_resource type="FontFile" uid="uid://dm0wl8wvl7rtj" path="res://fonts/HalloweenSlimePersonalUse-4B80D.otf" id="2_7xuvg"]
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_o63kj"]
+load_path = "res://.godot/imported/win_background.jpg-4845a1848953026060a68200b437d719.ctex"
+
+[node name="win_menu" type="CanvasLayer"]
+script = ExtResource("1_k75tp")
+
+[node name="TextureRect" type="TextureRect" parent="."]
+offset_left = -1.0
+offset_top = 2.0
+offset_right = 1923.0
+offset_bottom = 1167.0
+texture = SubResource("CompressedTexture2D_o63kj")
+expand_mode = 1
+
+[node name="start" type="Button" parent="."]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -141.0
+offset_top = -149.0
+offset_right = 155.0
+offset_bottom = -69.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(0.333333, 1, 0, 1)
+theme_override_colors/font_pressed_color = Color(0, 1, 0, 1)
+theme_override_colors/font_hover_color = Color(0, 1, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 1, 0, 1)
+theme_override_fonts/font = ExtResource("2_7xuvg")
+theme_override_font_sizes/font_size = 80
+text = "Play Again"
+
+[node name="main_menu" type="Button" parent="."]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -139.0
+offset_top = -7.0
+offset_right = 159.0
+offset_bottom = 73.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(0.364706, 1, 0.109804, 1)
+theme_override_colors/font_pressed_color = Color(0, 1, 0, 1)
+theme_override_colors/font_hover_color = Color(0, 1, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 1, 0, 1)
+theme_override_fonts/font = ExtResource("2_7xuvg")
+theme_override_font_sizes/font_size = 80
+text = "Main Menu"
+
+[node name="quit" type="Button" parent="."]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -141.0
+offset_top = 134.0
+offset_right = 155.0
+offset_bottom = 214.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(0.333333, 1, 0.0941176, 1)
+theme_override_colors/font_pressed_color = Color(0, 1, 0, 1)
+theme_override_colors/font_hover_color = Color(0, 1, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 1, 0, 1)
+theme_override_fonts/font = ExtResource("2_7xuvg")
+theme_override_font_sizes/font_size = 80
+text = "Quit"
+
+[node name="Label" type="Label" parent="."]
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -198.0
+offset_top = 43.0
+offset_right = 225.0
+offset_bottom = 115.0
+grow_horizontal = 2
+size_flags_horizontal = 4
+theme_override_colors/font_color = Color(0, 1, 0, 1)
+theme_override_colors/font_shadow_color = Color(1, 0, 0, 1)
+theme_override_fonts/font = ExtResource("2_7xuvg")
+theme_override_font_sizes/font_size = 80
+text = "You ESCAPED!!!!"
+
+[node name="Label2" type="Label" parent="."]
+offset_left = -45.0
+offset_top = 67.0
+offset_right = 470.0
+offset_bottom = 214.0
+size_flags_horizontal = 4
+theme_override_colors/font_color = Color(0, 1, 0, 1)
+theme_override_colors/font_shadow_color = Color(1, 0, 0, 1)
+theme_override_fonts/font = ExtResource("2_7xuvg")
+theme_override_font_sizes/font_size = 60
+text = "CREATED BY
+ANDREW HENNESSY"
+horizontal_alignment = 1
+
+[connection signal="pressed" from="start" to="." method="_on_start_pressed"]
+[connection signal="pressed" from="main_menu" to="." method="_on_main_menu_pressed"]
+[connection signal="pressed" from="quit" to="." method="_on_quit_pressed"]
